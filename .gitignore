@@ -1,0 +1,4 @@
+.idea/
+*.xml
+metastore_db/
+derby.log
