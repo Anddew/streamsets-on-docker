@@ -2,10 +2,10 @@
   "pipelineConfig" : {
     "schemaVersion" : 6,
     "version" : 14,
-    "pipelineId" : "expedia7de49564-4b5c-43b3-a14e-5ce8fb9119b5",
+    "pipelineId" : "expedia26816f2a-1a12-4ac1-b2c2-ec71fb532e76",
     "title" : "expedia",
     "description" : "",
-    "uuid" : "87e50a65-455a-458a-b795-f0063d6f767a",
+    "uuid" : "c0ee7959-00c9-4410-b438-090ab599508c",
     "configuration" : [ {
       "name" : "executionMode",
       "value" : "STANDALONE"
@@ -486,13 +486,13 @@
         "value" : 1000
       }, {
         "name" : "conf.poolingTimeoutSecs",
-        "value" : 60
+        "value" : 6000
       }, {
         "name" : "conf.maxSpoolFiles",
         "value" : 1000
       }, {
         "name" : "conf.spoolingPeriod",
-        "value" : 5
+        "value" : 60
       }, {
         "name" : "conf.initialFileToProcess",
         "value" : null
@@ -501,10 +501,10 @@
         "value" : "/tmp/dataset/errors"
       }, {
         "name" : "conf.postProcessing",
-        "value" : "NONE"
+        "value" : "ARCHIVE"
       }, {
         "name" : "conf.archiveDir",
-        "value" : "/tmp/dataset/archive"
+        "value" : "/tmp/dataset/archive/hotels"
       }, {
         "name" : "conf.retentionTimeMins",
         "value" : 0
@@ -528,7 +528,7 @@
         "value" : "TO_ERROR"
       } ],
       "uiInfo" : {
-        "yPos" : 41.666664123535156,
+        "yPos" : 40.643821716308594,
         "stageType" : "SOURCE",
         "rawSource" : {
           "configuration" : [ {
@@ -992,7 +992,7 @@
       "uiInfo" : {
         "description" : "HTTP request for lat/lng data",
         "label" : "Geo API",
-        "xPos" : 523.3333129882812,
+        "xPos" : 522.200439453125,
         "yPos" : -93.66666412353516,
         "stageType" : "PROCESSOR"
       },
@@ -1119,8 +1119,8 @@
       "uiInfo" : {
         "description" : "",
         "label" : "Convert lat/lng to double",
-        "xPos" : 1204.3333740234375,
-        "yPos" : 62,
+        "xPos" : 1205.46630859375,
+        "yPos" : 63.132896423339844,
         "stageType" : "PROCESSOR"
       },
       "inputLanes" : [ "FieldRemover_01OutputLane15675964204660", "StreamSelector_01OutputLane1567506132833" ],
@@ -1163,7 +1163,7 @@
       "uiInfo" : {
         "description" : "Geohash evaluator",
         "label" : "GeoHash",
-        "xPos" : 1471.333251953125,
+        "xPos" : 1472.4661865234375,
         "yPos" : 61.666664123535156,
         "stageType" : "PROCESSOR"
       },
@@ -1364,22 +1364,22 @@
       "services" : [ ]
     },
     "info" : {
-      "pipelineId" : "expedia7de49564-4b5c-43b3-a14e-5ce8fb9119b5",
+      "pipelineId" : "expedia26816f2a-1a12-4ac1-b2c2-ec71fb532e76",
       "title" : "expedia",
       "description" : "",
-      "created" : 1567677046460,
-      "lastModified" : 1567682858787,
+      "created" : 1567685827963,
+      "lastModified" : 1567746523839,
       "creator" : "admin",
       "lastModifier" : "admin",
       "lastRev" : "0",
-      "uuid" : "87e50a65-455a-458a-b795-f0063d6f767a",
+      "uuid" : "c0ee7959-00c9-4410-b438-090ab599508c",
       "valid" : true,
       "metadata" : {
         "labels" : [ ]
       },
-      "name" : "expedia7de49564-4b5c-43b3-a14e-5ce8fb9119b5",
+      "name" : "expedia26816f2a-1a12-4ac1-b2c2-ec71fb532e76",
       "sdcVersion" : "3.10.1",
-      "sdcId" : "e8562c45-cfc1-11e9-a895-6de555f89516"
+      "sdcId" : "2714827a-cfd5-11e9-8c08-6708ba30d4c1"
     },
     "metadata" : {
       "labels" : [ ]
@@ -1694,8 +1694,8 @@
     "valid" : true,
     "issues" : {
       "stageIssues" : { },
-      "issueCount" : 0,
-      "pipelineIssues" : [ ]
+      "pipelineIssues" : [ ],
+      "issueCount" : 0
     },
     "previewable" : true
   },
@@ -1749,7 +1749,7 @@
     } ],
     "dataRuleDefinitions" : [ ],
     "driftRuleDefinitions" : [ ],
-    "uuid" : "03fb8a04-4680-453f-a831-9552e2ca6a9b",
+    "uuid" : "9e3c5bd1-fdce-4e84-9b31-1c18ae7d4769",
     "configuration" : [ {
       "name" : "emailIDs",
       "value" : [ ]
